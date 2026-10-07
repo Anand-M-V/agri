@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", "Noto Sans Kannada", sans-serif;
+  --font-sans: "Hanken Grotesk", "Noto Sans Kannada", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  --surface-canvas: #0b1326;
+  --surface-low: #131b2e;
+  --surface-card: #171f33;
+  --surface-high: #222a3d;
+  --surface-highest: #2d3449;
+  --emerald-primary: #1e6b3d;
+  --sprout-accent: #22c55e;
+  --sprout-tint: #8bd79f;
+  --amber-soil: #d97706;
+  --amber-bright: #f59e0b;
+}
+
+body {
+  font-family: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0b1326;
+  color: #dae2fd;
+  min-height: 100vh;
+}
+
+/* Graticule Reticle Pattern */
+.bg-graticule {
+  background-image: 
+    linear-gradient(to right, rgba(241, 245, 249, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(241, 245, 249, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-graticule-dense {
+  background-image: 
+    linear-gradient(to right, rgba(241, 245, 249, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(241, 245, 249, 0.06) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1326;
+}
+::-webkit-scrollbar-thumb {
+  background: #222a3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #31394d;
+}
+
